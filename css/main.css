@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #666;
+    --font-family: Arial, sans-serif;
+    --font-size: 16px;
+    --line-height: 1.5;
+    --spacing: 20px;
+}
+/* styles.css */
+header {
+    background-color: var(--primary-color);
+    padding: var(--spacing);
+    text-align: center;
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature {
+    margin: var(--spacing);
+    width: calc(33.33% - var(--spacing));
+}
+
+.feature img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: var(--spacing);
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .feature {
+        width: calc(50% - var(--spacing));
+    }
+}
+
+@media (max-width: 480px) {
+    .feature {
+        width: 100%;
+    }
+}
