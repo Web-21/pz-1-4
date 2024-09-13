@@ -1,75 +1,89 @@
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background: #fafafa;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+:root {
+  --background-light: #fafafa;
+  --background-dark: #303030;
+  --text-dark: #000000de;
+  --text-light: #ffffff;
+  --primary-color: #07f03644;
+  --hover-color: #f1f1f1;
+  --secondary-color: #202020b2;
+  --overlay-color: rgba(255, 255, 255, 0.7);
+
+  --font-family: "Roboto";
+  --font-size-default: 16px;
+  --font-size-large: 18px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --line-height-default: 24px;
+
+  --padding-top-large: 60px;
+  --padding-top-small: 10px;
+  --padding-default: 20px;
+  --padding-card: 10px;
+  --padding-modal: 20px;
+
+  --transition-time-default: 0.5s;
+  --transition-hover: 0.3s;
+
+  --max-width-card: 360px;
+  --icon-size: 24px;
+  --body-width: 360px;
+  --button-width: 320px;
+  --button-height: 42px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  max-width: var(--body-width);
+  margin: 0 auto;
+  background-color: var(--background-dark);
 }
 
 .sidenav a {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-default);
   text-align: left;
-
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  color: #000000de;
+  color: var(--text-dark);
   display: block;
-  transition: 0.3s;
+  transition: var(--transition-hover);
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-#main {
-  transition: margin-left 0.5s;
-  padding: 20px;
+  color: var(--hover-color);
 }
 
 .tour-card {
   position: relative;
   width: 100%;
-  max-width: 360px;
+  max-width: var(--max-width-card);
   margin: 0 auto;
   margin-bottom: 10px;
 }
 
-.tour-image {
-  position: relative;
-}
-
 .tour-image img {
-  margin-top: 10px;
+  margin-top: var(--padding-top-small);
   width: 100%;
   height: auto;
   display: block;
 }
 
+
 .tour-title {
+  
+  background-color: var(--primary-color);
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
-  background-color: #39784e99;
-  color: white;
+  padding: var(--padding-card);
+  color: var(--text-light);
   text-align: center;
-  font-size: 18px;
+  font-size: var(--font-size-large);
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -84,74 +98,7 @@
   width: 100%;
 }
 
-.header span {
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end;
-  width: 100%;
-  margin-right: 10px;
-}
-
-.action-icon {
-  width: 24px;
-  height: 24px;
-  display: block;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: #303030;
-  max-width: 360px;
-  margin: 0 auto;
-}
-
-.modal-content {
-  background-color: #303030;
-  margin: 0;
-  padding: 20px;
-  border: none;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  overflow: auto;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-body {
-  background-color: #303030;
-  position: absolute;
-  width: 360px;
-  height: 1800px;
-  left: 0px;
-  top: 0px;
-  max-width: 360px;
-  margin: 0 auto;
-}
-
-.header h1 {
-  color: #ffffff;
-}
-.header {
+.container {
   display: flex;
   align-items: center;
   justify-content: left;
@@ -162,58 +109,56 @@ body {
   padding: 0;
 }
 
-.container {
-  position: relative;
-}
-.image-bottom {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.image-top {
-  position: absolute;
-  top: 14%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
-  z-index: 1;
+.container h1 {
+  color: var(--text-light);
 }
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-  max-width: 360px;
-  margin: 0 auto;
+.container span {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.action-icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  display: block;
+}
+
+.close {
+  margin-right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .reservButton {
-  width: 320px;
-  height: 42px;
-  left: 20px;
-  top: 1090px;
-  background: #39784e;
+  width: var(--button-width);
+  height: var(--button-height);
+  background: var(--primary-color);
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
   border-radius: 2px;
 }
 
 .event {
-  width: 215px;
-  height: 24px;
-  left: 53px;
-  top: 1032px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-default);
   display: flex;
   align-items: center;
   color: #6fb285;
 }
-
 .review {
   display: flex;
   align-items: center;
@@ -222,58 +167,55 @@ html {
 }
 
 .review p {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 400;
+  font-family: var(--font-family);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-regular);
   line-height: 22px;
   text-align: left;
   box-sizing: border-box;
   background: #757575;
   display: inline-block;
 }
+
 .modal-content h2 {
-  width: 320px;
+  width: var(--button-width);
   height: 24px;
-  left: 20px;
-  top: 625px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #ffffff;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-default);
+  color: var(--text-light);
 }
 
 .modal-content .tour-title {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
-  background-color: #202020b2;
-  color: white;
+  padding: var(--padding-card);
+  background-color: var(--secondary-color);
+  color: var(--text-light);
   text-align: center;
-  font-size: 18px;
+  font-size: var(--font-size-large);
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  
 }
+
 .modal-content h3 {
-  left: 16px;
-  top: 393px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-default);
+  line-height: var(--line-height-default);
+  color: var(--overlay-color);
 }
 
 @media only screen and (max-width: 360px) {
   body {
-    width: 100%;
+    width: 360px;
     height: auto;
   }
 
@@ -289,12 +231,12 @@ html {
     width: 100%;
   }
 
-  .header {
+  .container {
     justify-content: center;
     font-size: 14px;
   }
 
-  .header span,
+  .container span,
   .tour-actions {
     justify-content: center;
   }
@@ -335,12 +277,12 @@ html {
     height: 36px;
   }
 
-  .header {
+  .container {
     gap: 5px;
     font-size: 12px;
   }
 
-  .header span,
+  .container span,
   .tour-actions {
     gap: 5px;
     justify-content: center;
@@ -364,4 +306,52 @@ html {
     font-size: 14px;
     line-height: 20px;
   }
+}
+
+#sidenavbtn {
+  display: none;
+}
+
+.sidenav {
+  display: none;
+  background-color: #fafafa;
+  position: fixed;
+  top: 0;
+  left: auto;
+  width: 250px;
+  height: 100%;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 1s ease;
+}
+
+#sidenavbtn:checked ~ .sidenav {
+  display: inline;
+  transform: translateX(0);
+}
+
+.menu-icon {
+  position: relative;
+  z-index: 2000;
+  cursor: pointer;
+  background-color: 212121;
+}
+
+.image-container {
+  position: relative;
+  width: 250px;
+}
+
+.image-bottom {
+  background: #6fb285;
+  width: 100%;
+}
+
+.image-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
 }
