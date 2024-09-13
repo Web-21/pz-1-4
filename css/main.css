@@ -154,7 +154,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   gap: 20px;
   background: #212121;
   width: 100%;
@@ -183,10 +183,10 @@ body {
 
 body,
 html {
-  margin: 0;
-  padding: 0;
-  max-width: 360px;
   margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .reservButton {
