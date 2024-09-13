@@ -16,13 +16,12 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="app_bar" id="details_bar">
-            <img
-                src="./img/details/back_to_page_ico.png"
-                alt="loading..."
-                onclick="back()"
-            />
+    <div class="iav_container">
+        <div class="iav_app_bar" id="details_bar">
+            <a href="index.html"><img
+              src="./img/details/back_to_page_ico.png"
+              alt="back"
+            /></a>
 
             <p>Тур вихідного дня "Гостинність Чорнобаївки"</p>
 
@@ -32,17 +31,17 @@
             />
         </div>
 
-        <div class="details_content">
-            <img src="./img/news/first_news.png" alt="loading..." class="news_img"/>
-            <div class="content_navigation" id="details_content_navigation">
-                <div class="details_interaction">
-                    <img src="./img/side/heart_ico.png" alt="loading..." class="interaction_img"/>
-                    <img src="./img/side/share_ico.png" alt="loading..." class="interaction_img"/>
+        <div class="iav_details_content">
+            <img src="./img/news/first_news.png" alt="news" class="iav_news_img"/>
+            <div class="iav_content_navigation" id="details_content_navigation">
+                <div class="iav_details_interaction">
+                    <img src="./img/side/heart_ico.png" alt="like" class="iav_interaction_img"/>
+                    <img src="./img/side/share_ico.png" alt="share" class="iav_interaction_img"/>
                 </div>
             </div>
         </div>
 
-        <div class="main_content" id="description_content">
+        <div class="iav_main_content" id="description_content">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna wirl aliqua. 
                 Up exlaborum incididunt quis nostrud exercitatn. Lorem ipsum dolor sit amet, 
@@ -51,34 +50,28 @@
             </p>
         </div>
 
-        <div class="feedback_content">
+        <div class="iav_feedback_content">
             <p>Відгуки</p>
-            <div class="comment">
-                <img src="./img/details/man_avatar.png" alt="loading...">
+            <div class="iav_comment">
+                <img src="./img/details/man_avatar.png" alt="man avatar">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
                     eiusmod tempor incididunt ut labore et dolore magna wirl aliqua. 
                     Up exlaborum incididunt quis nostrud exercitatn. </p>
             </div>
-            <div class="comment">
-                <img src="./img/details/woman_avater.png" alt="loading...">
+            <div class="iav_comment">
+                <img src="./img/details/woman_avater.png" alt="woman avater">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
             </div>
         </div>
 
-        <div class="order_content">
-            <div class="date_content">
-                <p class="title">Наступна подія</p>
-                <p><img src="./img/details/date_ico.png" alt="loading..."> 8 вересня 2024</p>
-                <p><img src="./img/details/peoples_count_ico.png" alt="loading..."> Кількість місць обмежена</p>
+        <div class="iav_order_content">
+            <div class="iav_date_content">
+                <p class="iav_title">Наступна подія</p>
+                <p><img src="./img/details/date_ico.png" alt="date"> 8 вересня 2024</p>
+                <p><img src="./img/details/peoples_count_ico.png" alt="peoples"> Кількість місць обмежена</p>
             </div>
-            <button class="btn">забронювати</button>
+            <button class="iav_btn">забронювати</button>
         </div>
     </div>
-
-    <script>
-        function back (){
-            window.location.href = 'index.html';
-        }
-    </script>
 </body>
 </html>
