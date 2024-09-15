@@ -1,6 +1,6 @@
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+  width: 320px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -17,7 +17,6 @@
   font-weight: 500;
   line-height: 24px;
   text-align: left;
-
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   color: #000000de;
@@ -27,18 +26,22 @@
 
 .sidenav a:hover {
   color: #f1f1f1;
+  background-color: #575757;
 }
 
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 0;
   font-size: 36px;
-  margin-left: 50px;
+  margin: 0px;
+  padding: 10px 20px;
+  color: #ffffff; 
+  background-color: #333333;
 }
 #main {
   transition: margin-left 0.5s;
-  padding: 20px;
+  padding: 30px;
 }
 
 .tour-card {
@@ -47,6 +50,7 @@
   max-width: 360px;
   margin: 0 auto;
   margin-bottom: 10px;
+  left: 5cm;
 }
 
 .tour-image {
@@ -147,9 +151,12 @@ body {
   max-width: 360px;
   margin: 0 auto;
 }
-
 .header h1 {
   color: #ffffff;
+}
+.header h1 :hover {
+  color: #f1f1f1;
+  background-color: #575757;
 }
 .header {
   display: flex;
@@ -157,7 +164,7 @@ body {
   justify-content: center;
   gap: 20px;
   background: #212121;
-  width: 100%;
+  width: 100vw;
   margin: 0;
   padding: 0;
 }
@@ -167,9 +174,12 @@ body {
 }
 .image-bottom {
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  left: 2px;
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(246.63deg, #397872 2.69%, #819745 101.82%);
+  
+
 }
 .image-top {
   position: absolute;
@@ -187,6 +197,7 @@ html {
   padding: 0;
   max-width: 1200px;
   width: 100%;
+
 }
 
 .reservButton {
@@ -231,6 +242,7 @@ html {
   background: #757575;
   display: inline-block;
 }
+
 .modal-content h2 {
   width: 320px;
   height: 24px;
