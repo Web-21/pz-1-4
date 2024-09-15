@@ -7,7 +7,7 @@
   left: 0;
   background: #fafafa;
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 0; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -30,14 +30,14 @@
 }
 
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative ;
+  top: 0px;
   font-size: 36px;
   margin: 0px;
   padding: 10px 20px;
   color: #ffffff; 
   background-color: #333333;
+  padding-left: 280px;
 }
 #main {
   transition: margin-left 0.5s;
@@ -171,21 +171,32 @@ body {
 
 .container {
   position: relative;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.name {
+position: absolute;
+display: flex;
+padding-top: 140px;
+padding-left: 70px;
+color: rgb(255, 255, 255);
+font-size: 23px;
+z-index: 2;
 }
 .image-bottom {
+  position: relative;
   top: 0;
-  left: 2px;
-  width: 300px;
-  height: 200px;
+  left: 0px;
+  width: 320px;
+  height: 220px;
   background: linear-gradient(246.63deg, #397872 2.69%, #819745 101.82%);
-  
-
 }
 .image-top {
   position: absolute;
-  top: 14%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 90px;
+  left: 45%;
+  transform: translateX(-50%);
   width: 80px;
   height: 80px;
   z-index: 1;
