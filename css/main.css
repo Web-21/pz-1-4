@@ -1,5 +1,10 @@
+:root {
+  --default-background-color: #303030;
+  --default-font: "Roboto";
+  --default-text-color: #ffffff;
+}
 a {
-  color: #ffffff;
+  color: var(--default-text-color);
   text-decoration: none;
 }
 .main-container {
@@ -7,7 +12,7 @@ a {
   height: 1600px;
   border: 2px solid black;
   margin: auto;
-  background-color: #303030;
+  background-color: var(--default-background-color);
 }
 .navbar {
   width: 360px;
@@ -29,12 +34,12 @@ a {
   margin-left: 15px;
 }
 .title {
-  font-family: Roboto;
+  font-family: var(--default-font);
   font-size: 20px;
   font-weight: 400;
   line-height: 23.44px;
   text-align: left;
-  color: #ffffff;
+  color: var(--default-text-color);
   margin-left: 30px;
 }
 .news {
@@ -60,8 +65,8 @@ a {
 .news1-text {
   width: 250px;
   height: 44px;
-  color: #ffffff;
-  font-family: Roboto;
+  color: var(--default-text-color);
+  font-family: var(--default-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 23.44px;
@@ -124,7 +129,7 @@ a {
   width: 360px;
   height: 1210px;
   border: 2px solid black;
-  background-color: #303030;
+  background-color: var(--default-background-color);
   margin: auto;
 }
 .backward {
@@ -169,7 +174,7 @@ a {
   height: 194px;
   margin: auto;
   margin-top: 15px;
-  font-family: Roboto;
+  font-family: var(--default-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -185,7 +190,7 @@ a {
   margin-left: 15px;
 }
 .feedback-title {
-  font-family: Roboto;
+  font-family: var(--default-font);
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -205,7 +210,7 @@ a {
 .oval1-text {
   width: 246px;
   height: 140px;
-  font-family: Roboto;
+  font-family: var(--default-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -231,7 +236,7 @@ a {
 .oval2-text {
   width: 246px;
   height: 68px;
-  font-family: Roboto;
+  font-family: var(--default-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -250,7 +255,7 @@ a {
   margin-left: 15px;
 }
 .next-event-title {
-  font-family: Roboto;
+  font-family: var(--default-font);
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -267,7 +272,7 @@ a {
   background-repeat: no-repeat;
 }
 .calendar-text {
-  font-family: Roboto;
+  font-family: var(--default-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -286,7 +291,7 @@ a {
   background-repeat: no-repeat;
 }
 .warning-text {
-  font-family: Roboto;
+  font-family: var(--default-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -298,7 +303,7 @@ a {
   width: 320px;
   height: 42px;
   background: #39784e;
-  color: #ffffff;
+  color: var(--default-text-color);
   margin-left: 20px;
 }
 .button:hover {
@@ -314,14 +319,14 @@ a {
 .side-container {
   width: 360px;
   height: 640px;
-  background-color: #303030;
+  background-color: var(--default-background-color);
   margin: auto;
   display: flex;
 }
 .side-drawer {
   width: 304px;
   height: 592px;
-  background-color: #ffffff;
+  background-color: var(--default-text-color);
 }
 .side-wall {
   width: 56px;
@@ -355,7 +360,7 @@ a {
 .avatar-text {
   width: 264px;
   height: 24px;
-  font-family: Roboto;
+  font-family: var(--default-font);
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -377,17 +382,17 @@ li {
 }
 li > a {
   color: #000000;
-  font-family: Roboto;
+  font-family: var(--default-font);
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
   text-align: left;
 }
 .android-menu-side {
-    width: 360px;
-    height: 48px;
-    background-color: #000000;
-    margin-top: 25px;
-    display: flex;
-    margin: auto;
-  }
+  width: 360px;
+  height: 48px;
+  background-color: #000000;
+  margin-top: 25px;
+  display: flex;
+  margin: auto;
+}
