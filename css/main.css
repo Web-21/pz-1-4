@@ -3,7 +3,7 @@ section{
 }
 .main-info{
     width:360px;
-    height: 1800px ;
+    height: 1400px ;
     background-color: #303030;
     margin: 0 auto;
 }
@@ -35,4 +35,53 @@ img{
     top: 1552px;
     background-color: #000000;
     margin: 0 auto;
+    display: block;
+    align-items: center;
+}
+
+.img-main {
+  padding-left: 7px;
+  padding-top: 12px;
+  z-index: -1;
+}
+
+/*.div-nav{*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*}*/
+
+.content{
+  background: rgba( 0, 255, 0, 0.2);
+  width: 344px;
+  height: 70px;
+  position: absolute;
+  top: 202px;
+  left: 7px;
+  display: grid;
+  grid-template-columns: repeat(6, 57px);
+  place-items: center;
+
+}
+
+.card{
+  position: relative;
+}
+
+h1{
+  grid-column: span 4;
+  padding-left: 10px;
+}
+
+.img-favourite-and-share{
+  width: 24px;
+  height: 24px;
+  padding-bottom: 30px;
+
+}
+.button-favourite{
+  color: #FFFFFF
+}
+.more-info{
+  color: #FFFFFF;
+  text-decoration: none;
 }
