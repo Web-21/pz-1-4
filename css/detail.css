@@ -1,3 +1,10 @@
+.main-info-details{
+  width:360px;
+  height: 930px ;
+  background-color: #303030;
+  margin: 0 auto;
+}
+
 .img-detail{
   z-index: -1;
   width: 360px;
@@ -30,4 +37,29 @@
   color: #FFFFFFB2;
   padding-left: 10px;
   padding-right: 10px;
+}
+.hosts{
+  height: 300px;
+}
+h1{
+  font-size: 18px
+}
+
+.icon-details{
+  width: 24px;
+  height: 24px;
+  padding-left: 10px;
+  align-self: center;
+}
+.container-button-reserve{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.button-reserve{
+  width: 320px;
+  height: 42px;
+  background-color: #39784E;
+  color: white;
+
 }
