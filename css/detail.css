@@ -1,0 +1,33 @@
+.img-detail{
+  z-index: -1;
+  width: 360px;
+}
+.content-detail{
+    background: rgba( 0, 0, 0, 0.6);
+    width: 360px;
+    height: 48px;
+    position: absolute;
+    top: 212px;
+    display: grid;
+    grid-template-columns: repeat(6, 57px);
+    place-items: center;
+  justify-items: end;
+}
+.img-favourite-details{
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  grid-column: 5;
+}
+.img-share-details{
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  grid-column: 6;
+}
+
+.p-details{
+  color: #FFFFFFB2;
+  padding-left: 10px;
+  padding-right: 10px;
+}
