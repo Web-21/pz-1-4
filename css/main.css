@@ -1,326 +1,439 @@
-:root {
-    --bg: #686666;
-    --main_bg_color: #303030;
-    --app_bar_bg_color: #212121;
-    --main_text_color: #fff;
-    --default_font_size: 18px;
-    --navbar_font_size: 16px;
-    --default_font_family: 'Roboto', 'Regular';
-    --content_bg: #39784E;
-    --details_content_bg: #202020;
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 320px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background: #fafafa;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  overflow: hidden;
+}
+
+
+.sidenav a {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #000000de;
+  display: block;
+  transition: 0.3s;
+;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: #575757;
+
+}
+
+.sidenav .closebtn {
+  position: relative;
+  top: 0px;
+  font-size: 36px;
+  margin: 0px;
+  padding: 10px 20px;
+  color: #ffffff; 
+  background-color: #333333;
+  padding-left: 280px;
+
+}
+#main {
+  transition: margin-left 0.5s;
+  padding: 30px;
+}
+
+.tour-card {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  left: 5cm;
+}
+
+.tour-image {
+  position: relative;
+}
+
+.tour-image img {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tour-title {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #39784e99;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tour-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.header span {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.action-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #303030;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.modal-content {
+  background-color: #303030;
+  margin: 0;
+  padding: 20px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 body {
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    background-color: var(--bg);
+  background-color: #303030;
+  position: absolute;
+  width: 360px;
+  height: 1800px;
+  left: 0px;
+  top: 0px;
+  max-width: 360px;
+  margin: 0 auto;
+}
+.header h1 {
+  color: #ffffff;
+}
+.header h1 :hover {
+  color: #f1f1f1;
+  background-color: #575757;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #212121;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
-p {
-    font-family: var(--default_font_family);
+.container {
+  position: relative;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.name {
+position: absolute;
+display: flex;
+padding-top: 140px;
+padding-left: 40px;
+color: rgb(255, 255, 255);
+font-size: 20px;
+z-index: 2;
+}
+.image-bottom {
+  position: relative;
+  top: 0;
+  left: 0px;
+  width: 320px;
+  height: 220px;
+  background: linear-gradient(246.63deg, #397872 2.69%, #819745 101.82%);
+}
+.image-top {
+  position: absolute;
+  top: 90px;
+  left: 45%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
 }
 
-.iav_container {
-    width: 360px;
-    height: 640px;
-    background-color: var(--main_bg_color);
-    overflow-y: scroll;
-    overflow-x: hidden;
+.menu-item a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
 }
 
-::-webkit-scrollbar {
-    position: absolute;
-    width: 3px; 
-    height: 0; 
+.icon {
+  width: 16px; 
+  height: 16px;
+  margin-left: 20px;
 }
-::-webkit-scrollbar-track {
-    background: var(--main_bg_color);
-    border-radius: 50%; 
+.footer {
+margin-top: 20px;
+background-color: #212121;
+padding: 10px;
+ width: 360px;
+ height: 48px;
+ top: 592px;
+ gap: 0px;
+ opacity: 0px;
 }
-::-webkit-scrollbar-thumb {
-    background-color: #888; 
-    border-radius: 50%; 
-    border: 3px solid #f1f1f1; 
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color: #555; 
-}
-::-webkit-scrollbar-corner {
-    background: #f1f1f1; 
+body,
+html {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  width: 100%;
+
 }
 
-.iav_overlay {  
-    width: 0;
-    height: 640px;
-    position: absolute; 
-    z-index: 2; 
-    background-color: rgb(255, 255, 255);
-    overflow-x: hidden; 
-    transition: 0.5s;
-}  
-
-.iav_information_side {
-    display: grid;
+.reservButton {
+  width: 320px;
+  height: 42px;
+  left: 20px;
+  top: 1090px;
+  background: #39784e;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  border-radius: 2px;
+  gap: 0px;
+  color: #ffffff;
+  font-size: 20px;
 }
 
-.iav_information_side::after {
-    position: absolute;
-    right: 0;
-    width: 56px;
-    height: 640px;
-    content: " ";
-    background-color: var(--main_bg_color);
+.event {
+  width: 215px;
+  height: 24px;
+  left: 53px;
+  top: 1032px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #6fb285;
 }
 
-.iav_navbar_bg_img {
-    width: 304px;
-    height: 200px;
+.review {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px; 
 }
 
-.iav_avatar_side {
-    position: absolute;
-    top: 50px;
-    display: grid;
-    place-content: center;
-    justify-items: center;
-    width: 304px;
+.review p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  box-sizing: border-box;
+  background: #757575;
+  display: inline-block;
+  display: inline-block;
+  border-radius: 0px 50px 40px 50px;
+  padding: 10px;
+  color: #ffffff;
 }
 
-.iav_avatar_side p {
-    color: var(--main_text_color);
-    text-align: center;
-    margin-top: 18px;
-    font-size: var(--default_font_size);
+.modal-content h2 {
+  width: 320px;
+  height: 24px;
+  left: 20px;
+  top: 625px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
-.iav_navbar_avatar_img {
-    width: 80px;
-    height: 80px;
+.modal-content .tour-title {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #202020b2;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.event {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  padding: 10px; 
+  margin-bottom: 15px;
+}
+.modal-content h3 {
+  left: 16px;
+  top: 393px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.iav_content {
-    margin: 40px 20px 22px 20px;
-}
 
-.iav_content a img {
-    width: 24px;
-    height: 24px;
-    margin-right: 30px;
-}
-
-.iav_content a {
-    font-size: var(--navbar_font_size);
-    font-weight: 600;
-    margin-bottom: 30px;
-    display: flex;
-    color: #000000
-}
-
-
-.iav_overlay .iav_closebtn {
-    position: absolute;
-    z-index: 10;
-    top: 25px;
-    right: 15px;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-.iav_app_bar {
-    background-color: var(--app_bar_bg_color);
-    height: 80px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    color: var(--main_text_color);
-    font-family: var(--default_font_family);
-    font-size: 20px;
-    font-weight: 500;
-    padding-right: 10px;
-}
-
-.iav_toggle_nav {
-    display: none;
-}
-
-#sideNav {
-    width: 0;
-    height: 640px;
-    position: absolute;
-    top: 153px;
-    z-index: 2;
-    background-color: #fff;
-    overflow-x: hidden;
-    transition: width 0.5s ease-in-out;
-}
-
-.iav_toggle_nav:checked ~ #sideNav {
-    width: 360px;
-}
-
-.iav_app_bar img {
-    width: 36px;
-    height: 36px;
-    margin: 20px 0 0 5px;
-    cursor: pointer;
-}
-
-.iav_app_bar p {
-    margin: 20px 0 0 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.iav_news_card {
-    display: grid;
-    color: var(--main_text_color);
-    height: 250px;
-    margin: 20px 10px 15px 10px;
-}
-
-.iav_news_img {
-    width: 340px;
-    height: 260px;
-}
-
-.iav_content_navigation {
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    width: 340px;
-    height: 60px;
-    bottom: 70px;
-    background-color: var(--content_bg);
-    opacity: 0.6;
-    justify-content: space-between;
-    padding: 10px 0 0 0;
-}
-
-.iav_content_navigation a {
-    color: var(--main_text_color);
-    font-size: var(--default_font_size);
-    font-family: var(--default_font_family);
-    font-weight: 400;
-    margin-left: 10px;
-}
-
-.iav_interaction {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 30px;
-    margin-right: 10px;
-}
-
-.iav_interaction_img {
-    width: 24px;
-    height: 24px;
-}
-
-#details_bar {
-    margin: 0;
-}
-
-.iav_details_content {
-    width: 360px;
-    height: 260px;
-}
-
-.iav_details_interaction {
-    display: flex;
-    gap: 30px;
-    padding: 15px 20px;
-}
-
-.iav_details_content .iav_news_img {
-    width: 360px;
-    height: 260px;
-}
-
-#details_content_navigation {
-    width: 360px;
-    height: 57px;
-    justify-content: flex-end;
-    background-color: var(--details_content_bg);
-    opacity: 0.7;
-}
-
-.iav_news_card p {
-    font-size: var(--navbar_font_size);
-    opacity: 0.7;
-    letter-spacing: 1px;  
-}
-
-#description_content {
-    margin: 24px 16px 0 16px;
+@media only screen and (max-width: 360px) {
+  body {
+    width: 100%;
     height: auto;
-}
+  }
 
-.iav_feedback_content {
-    color: var(--main_text_color);
-    margin: 15px 0 0 15px;
-}
+  .sidenav {
+    width: 60%;
+  }
 
-.iav_feedback_content p{
-    margin-bottom: 10px;
-    font-size: var(--default_font_size);
-}
+  .tour-card {
+    max-width: 100%;
+  }
 
-.iav_comment {
-    display: flex;
-    gap: 15px;
-    margin-right: 10px;
-}
+  .reservButton {
+    width: 100%;
+  }
 
-.iav_comment img {
-    width: 40px;
-    height: 40px;
-}
+  .header {
+    justify-content: center;
+    font-size: 14px;
+  }
 
-.iav_comment p {
-    padding: 12px 14px 5px 14px;
-    background-color: #757575;
-    border-radius: 0 25px 25px 25px;
-    opacity: 0.7;
-}
+  .header span,
+  .tour-actions {
+    justify-content: center;
+  }
 
-.iav_order_content {
-    display: grid;
-    justify-items: center;
-    margin: 15px 0;
-}
+  .modal-content h2 {
+    width: 100%;
+  }
 
-.iav_date_content {
-    width: 320px;
-    margin: 0 20px;
-}
+  .modal-content h3 {
+    font-size: 14px;
+  }
 
-.iav_date_content p {
-    color: #6FB285;
-    margin-bottom: 15px;
+  .tour-title {
     font-size: 16px;
+    padding: 8px;
+  }
+
+  .review p {
+    width: 100%;
+  }
 }
 
+@media only screen and (max-width: 250px) {
+  body {
+    min-width: 250px;
+  }
 
-.iav_date_content .iav_title {
-    color: var(--main_text_color);
-    font-size: var(--default_font_size);
-}
+  .sidenav {
+    display: none;
+  }
 
-.iav_date_content p img{
-    width: 24px;
-    height: 24px;
-    margin-right: 15px;
-}
+  .tour-card {
+    max-width: 100%;
+  }
 
-.iav_btn {
-    width: 320px;
-    height: 42px;
-    text-transform: uppercase;
-    color: var(--main_text_color);
-    background-color: #6FB285;
-    border: none;
-    margin-top: 20px;
+  .reservButton {
+    width: 100%;
+    height: 36px;
+  }
+
+  .header {
+    gap: 5px;
+    font-size: 12px;
+  }
+
+  .header span,
+  .tour-actions {
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .modal-content h2 {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .modal-content h3 {
+    font-size: 12px;
+  }
+
+  .tour-title {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .review p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
