@@ -1,0 +1,29 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.topHead {
+    background-color: #212121;
+    width: 360px;
+    height: 80px;
+    
+}
+h2{
+font-family: Arial,;
+color: #FFFFFF;
+size: 14px;
+
+}
+
+.menu{
+padding:40px 0 0 16px ;
+width: 24px;
+height: 24px;
+
+}
+.amount{
+    width: 344px;
+height: 260px;   
+}
