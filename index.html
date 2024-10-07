@@ -2,25 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="./css/main.css" rel="stylesheet" />
+  <link href="./css/header-menu.css" rel="stylesheet" />
+
 </head>
 
 <body>
-    <main>
-        <div class="topHead">
-           <button class="menu"> <img src="img/menu.png" alt="1"></button>
-        <h2>Популярні тури</h2>
-    </div>
-    </main>
+<header>
+  <nav class="header-nav" role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
 
-    <div class="conteiner">
-        <div><img  class="amount" src="img/some_1.png" alt="1"></div>
-        <div><img  class="amount" src="img/some_2.jpg" alt="2"></div>
-        <div><img class="amount" src="img/some_3.jpg" alt="3"></div>
+      <!--
+      Some spans to act as a hamburger.
+
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Info</li></a>
+        <a href="#"><li>Contact</li></a>
+        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+      </ul>
     </div>
+  </nav>
+  <section>
+    <h1>Популярні тури</h1>
+  </section>
+</header>
+
+<div class="conteiner">
+  <div><img class="amount" src="img/some_1.png" alt="1"></div>
+  <div><img class="amount" src="img/some_2.jpg" alt="2"></div>
+  <div><img class="amount" src="img/some_3.jpg" alt="3"></div>
+</div>
 
 </body>
 

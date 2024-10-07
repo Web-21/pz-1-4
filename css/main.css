@@ -1,14 +1,26 @@
 body {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
+  margin: 0;
 }
 
+header {
+  background-color: #212121;
+  width: 360px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+header .header-nav {
+  margin: 0 20px;
+}
+header  h1{
+  color: #FFF;
+  font-size: 20px;
+}
 .topHead {
     background-color: #212121;
     width: 360px;
     height: 80px;
-    
 }
 h2{
 font-family: Arial,;
@@ -25,5 +37,5 @@ height: 24px;
 }
 .amount{
     width: 344px;
-height: 260px;   
+height: 260px;
 }
