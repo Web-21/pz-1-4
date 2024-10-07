@@ -1,0 +1,161 @@
+:root {
+  --color-of-background: #fff;
+  --block-color: #303030;
+  --text-color: black;
+}
+.up {
+  width: 360px;
+  height: 610px;
+  background: var(--color-of-background);
+  margin-left: 550px;
+  display: flex;
+}
+.side_nav {
+  width: 304px;
+  height: 592px;
+  background: var(--color-of-background);
+  border: 1px solid var(--color-of-background);
+}
+.rectangles {
+  width: 304px;
+  height: 200px;
+  background-image: url(../img/curtain/greenn.png);
+  background-position: center;
+  border: 1px solid var(--color-of-background);
+}
+.close {
+  width: 60px;
+  height: 340px;
+}
+.cross {
+  width: 14px;
+  height: 14px;
+  margin-top: 35px;
+  margin-left: 22px;
+  background-image: url(../img/curtain/close.png);
+}
+.block {
+  width: 56px;
+  height: 610px;
+  background: var(--block-color);
+  margin-top: 1.5px;
+}
+.window {
+  width: 264px;
+  height: 90px;
+  margin-left: 115px;
+  margin-top: 30px;
+}
+.text {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 15px;
+}
+.my_name {
+  color: var(--color-of-background);
+}
+.photo {
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/curtain/Avatar.png);
+}
+.icons_blocks {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.my_profile {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/curtain/Vector.png);
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.purchases {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/curtain/purchases.png);
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  margin-top: 27px;
+}
+.mess {
+  background-image: url(../img/curtain/pov.png);
+}
+.favourite {
+  background-image: url(../img/curtain/favourite.png);
+}
+.friends {
+  background-image: url(../img/curtain/social.png);
+}
+.messages {
+  background-image: url(../img/curtain/message.png);
+}
+.spam {
+  background-image: url(../img/curtain/spam.png);
+}
+.choices {
+  display: flex;
+}
+.text_myprofile {
+  width: 113px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+li {
+  list-style-type: none;
+}
+ul {
+  padding-left: 0;
+}
+.navbar {
+  width: 360px;
+  height: 48px;
+  background-color: var(--text-color);
+  margin-left: 552px;
+  display: flex;
+}
+.panel_of_manage {
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px;
+  height: 48px;
+  width: 120px;
+}
+.back {
+  background-image: url(../img/news/back.png);
+}
+.home {
+  background-image: url(../img/news/home.png);
+}
+.recent {
+  background-image: url(../img/news/recent.png);
+}
+.back,
+.home,
+.recent,
+.cross,
+.my_profile,
+.purchases,
+.favourite,
+.friends,
+.messages,
+.spam:hover {
+  cursor: pointer;
+}

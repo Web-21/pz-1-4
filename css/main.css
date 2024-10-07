@@ -1,0 +1,141 @@
+:root {
+  --general-background-color: #303030;
+  --text-color:#fff;
+  --navbar-color: #000000;
+}
+.background {
+  width: 360px;
+  height: 1600px;
+  background-color: var(--general-background-color);
+  margin-left: 550px;
+} 
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.app_bar_bg {
+  width: 360px;
+  height: 70px;
+  background-color: #212121;
+  display: flex;
+}
+.dashes {
+  background-repeat: no-repeat;
+  background-image: url(../img/news/3dashes.png);
+  width: 70px;
+  height: 90px;
+  border: 2px;
+  background-position: center;
+}
+.dashes, .share, .like, .back, .home, .recent:hover{
+  cursor: pointer;
+}
+.popular_tour {
+  width: 145px;
+  height: 24px;
+  color: var(--text-color);
+  margin-top: 35px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.44px;
+  text-align: left;
+}
+.news{
+  width: 344px;
+  height: 260px;
+  margin-left: 8px;
+  border: 1px solid var(--general-background-color);
+}
+.news1 {
+  background-image: url(../img/news/explotion.png);
+  margin-top: 30px;
+}
+.placeholder {
+  width: 344px;
+  height: 68px;
+  background-color: #39784e99;
+  margin-top: 192px;
+  display: flex;
+}
+.text {
+  width: 250px;
+  height: 330px;
+  top: 284px;
+  margin-left: 6px;
+  margin-top: 10px;
+  left: 18px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: var(--text-color);
+}
+.share_like {
+  display: flex;
+}
+.like {
+  background-image: url(../img/news/like.png);
+  width: 18px;
+  height: 16px;
+  top: 355px;
+  margin-top: 16px;
+  margin-left: 20px;
+  gap: 0px;
+  opacity: 0px;
+  background-size: cover;
+  background-position: center;
+}
+.share {
+  background-image: url(../img/news/share.png);
+  width: 22px;
+  height: 25px;
+  margin-top: 13px;
+  margin-left: 20px;
+  top: 355px;
+  gap: 0px;
+  opacity: 0px;
+  background-size: cover;
+}
+.news2 {
+  background-image: url(../img/news/water.png);
+  margin-top: 20px;
+}
+.news3 {
+  background-image: url(../img/news/gun.png);
+  margin-top: 20px;
+}
+.news4 {
+  background-image: url(../img/news/tractor.png);
+  margin-top: 20px;
+}
+.news5 {
+  background-image: url(../img/news/tank.png);
+  margin-top: 20px;
+}
+.navbar {
+  width: 360px;
+  height: 48px;
+  background-color: var(--navbar-color);
+  margin-top: 70px;
+  display: flex;
+}
+.panel_of_manage {
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px;
+  height: 48px;
+  width: 120px;
+}
+.back {
+  background-image: url(../img/news/back.png);
+}
+.home {
+  background-image: url(../img/news/home.png);
+}
+.recent {
+  background-image: url(../img/news/recent.png);
+}
