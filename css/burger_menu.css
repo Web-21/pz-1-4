@@ -164,13 +164,13 @@ a:hover
 .menu-item a {
   text-decoration: none;
   color: black;
-  margin-left: 10px; /* Відступ між текстом та іконкою */
+  margin-left: 10px; 
 }
 
 .icon {
   width: 16px; 
   height: 16px;
-  margin-left: 10px; /* Відступ між іконкою та текстом */
+  margin-left: 10px; 
 }
 
 /*
