@@ -1,3 +1,14 @@
+body
+{
+  margin: 0;
+  padding: 0;
+
+  /* make it look decent enough */
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
 .main-info-details{
     width:360px;
     background-color: #303030;
