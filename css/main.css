@@ -29,6 +29,7 @@ img{
   background-color: #212121;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
 grid-template-columns: repeat(2, 57px)
 }
 .navbar{
@@ -83,7 +84,7 @@ color: #FFFFFF;
 text-decoration: none;
 }
 .general-title{
-position: relative;
+position: absolute;
 text-align: center;
 align-self: center;
 padding-left: 30px;
