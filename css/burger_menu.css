@@ -1,9 +1,7 @@
 body
 {
-  margin: 0;
   padding: 0;
-
-  /* make it look decent enough */
+  margin: 0;
   background: #232323;
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
@@ -19,20 +17,20 @@ a
 
 a:hover
 {
-  color: tomato;
+  color: rgb(105, 71, 255);
 }
 
 #menuToggle
 {
   display: block;
-  position: relative;
   top: 28px;
+  position: relative;
   left: 50px;
 
   z-index: 1;
+  user-select: none;
 
   -webkit-user-select: none;
-  user-select: none;
 }
 
 #menuToggle input
