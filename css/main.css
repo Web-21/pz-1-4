@@ -396,3 +396,11 @@ li > a {
   display: flex;
   margin: auto;
 }
+.backwrd{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/backward.png);
+  margin-left: 15px;
+  margin-top: 25px;
+  transform: rotate(180deg);
+}
