@@ -1,0 +1,113 @@
+  /* Налаштування  body */
+  body {
+    margin: 20px;
+    padding: 0;
+    width: 375px; 
+    height: 100%; 
+    background-color: #f0f0f0;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/* header */
+
+header {
+    display: flex;                
+    align-items: center;          
+    justify-content: space-between; 
+    width: 100%;                  
+    background-color: #212121;
+    color: white;
+}
+
+.menu-image {
+    margin: 10px;
+    justify-content:center;
+    text-align: center;   
+    height: 10px;
+}
+
+.header-text {
+    flex-grow: 1;                 
+    text-align: center;           
+}
+
+
+ /* основний зміст сторінки */
+
+main {
+    background-color: #303030;
+    padding: 7px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+/* Стилі для контейнера з фотографіями */
+.photo-container {
+    position: relative;            
+    margin-bottom: 10px;           
+    max-width: 500px;              
+    margin-top: 20px;
+
+}
+
+/* Стилі для фото */
+.photo {
+    width: 100%;                  
+    height: auto;    
+    border-radius: 5px;                
+}
+
+/* Напівпрозорий зелений прямокутник */
+.photo-overlay {
+    position: absolute;
+    bottom: 3px;                     
+    left: 0;
+    width: 100%;                   
+    background-color: #39784E99 ;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    align-items:first baseline;             
+    box-sizing: border-box;         
+    border-radius: 5px;      
+}
+
+/* Підпис до фотографії */
+.photo-caption {
+    font-size: 16px;
+    text-align: left;
+    margin-right: 50px;
+}
+
+
+
+/* Стилі для іконок */
+.photo-icons {
+    display: flex;
+    gap: 10px;                    
+}
+
+
+.icon-like-icon{
+    margin: 5px;
+    width: 20px;                  
+    height: 20px; 
+}
+
+.icon-share-icon{
+    width: 20px;                  
+    height: 20px;   
+    margin: 5px 15px 5px 5px;
+
+}
+
+
+
+footer{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between; 
+    padding: 3% 20%;
+}

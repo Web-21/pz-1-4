@@ -1,0 +1,87 @@
+body {
+    margin-top: 20px;
+    padding: 0;
+    width: 375px; 
+    height: 100%; 
+    background-color: #faf6f6;
+    margin-left: auto;
+    margin-right: auto; 
+    border: 1px solid #44c818;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5)
+}
+
+.avatar-position{
+    position: relative;
+    display: inline-block; /* Контейнер буде розміром першого фото */
+}
+.background-img{
+    background: linear-gradient(to right, #7ec022, #18c38a, #237f48, #066a42);
+    margin: 0;
+    position: relative; /* Відносне позиціонування для прив'язки другого фото */
+    display: block; /* Забезпечує коректне відображення */
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.vector-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.account-signature{
+    color: white;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.icon-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 30px
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin:10px; /* Можна налаштувати відступ між рядками */
+}
+
+.icon {
+    width: 30px; /* Ширина іконки */
+    height: 30px; /* Висота іконки */
+    margin-right: 30px; /* Відстань між іконкою та текстом */
+}
+
+.text {
+    font-size: 16px;
+}
+.exit{
+    background-color: black; /* Чорний колір */
+    color: white; /* Білий текст */
+    width: 200px; /* Ширина блоку */
+    height: 100vh; /* Висота на всю висоту вікна */
+    position: absolute; /* Фіксоване розташування */
+    right: 0; /* Прив'язка до правого краю */
+    top: 0; /* Початок з верхньої частини */
+}
+footer {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between; 
+    padding: 3% 20%;
+    
+}
