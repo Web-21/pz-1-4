@@ -7,18 +7,20 @@ body {
     margin-left: auto;
     margin-right: auto; 
     border: 1px solid #44c818;
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5)
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    position: relative;
 }
 
 .avatar-position{
     position: relative;
-    display: inline-block; /* Контейнер буде розміром першого фото */
+    display: inline-block; 
 }
 .background-img{
     background: linear-gradient(to right, #7ec022, #18c38a, #237f48, #066a42);
     margin: 0;
-    position: relative; /* Відносне позиціонування для прив'язки другого фото */
-    display: block; /* Забезпечує коректне відображення */
+    position: relative; 
+    display: block; 
+
 }
 
 .overlay-image {
@@ -50,33 +52,37 @@ body {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 30px;
-    margin-top: 20px;
-    margin-left: 30px
+    margin-left: 30px;    
 }
 
 .icon-text {
     display: flex;
     align-items: center;
-    margin:10px; /* Можна налаштувати відступ між рядками */
+    margin:10px;
 }
 
 .icon {
-    width: 30px; /* Ширина іконки */
-    height: 30px; /* Висота іконки */
-    margin-right: 30px; /* Відстань між іконкою та текстом */
+    width: 30px; 
+    height: 30px; 
+    margin-right: 30px; 
 }
 
 .text {
     font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .exit{
-    background-color: black; /* Чорний колір */
-    color: white; /* Білий текст */
-    width: 200px; /* Ширина блоку */
-    height: 100vh; /* Висота на всю висоту вікна */
-    position: absolute; /* Фіксоване розташування */
-    right: 0; /* Прив'язка до правого краю */
-    top: 0; /* Початок з верхньої частини */
+    background-color: #303030; 
+    color: white; 
+    width: 75px; 
+    height: 100vh; 
+    position: absolute;
+    right: 0;
+    top: 0; 
+    text-align: center;
+}
+.close-img{
+    margin-top: 40px;
 }
 footer {
     background-color: #000000;
