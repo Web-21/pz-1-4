@@ -1,0 +1,96 @@
+body{
+    background-color: #303030;
+    
+}
+.sidebar header{
+    transition: 0.8s;
+
+}
+.header-tours  {
+    color: white;
+    display: inline-flex;
+    width: 360px;
+    height: 80px;
+    background-color:  #212121;
+    gap: 20px;
+  }
+.header-tours img{
+    width: 24px;
+    height: 24px;
+    padding:0px;
+    border:0px;
+    margin: 20px;
+}
+.header-tours h1{
+    
+    padding:0px;
+    border:0px;
+    margin: 14px;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    width: 364px;
+    height: 100%;
+    background: white;
+    background-image: linear-gradient(to left, #303030 54px, rgba(0,0,0,0) 54px); 
+    overflow-x: hidden;
+    transition: 0.8s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.sidebar ul a{
+    height: 100%;
+    width: 100%;
+    padding: 8px 8px 8px 32px;
+    margin: 0;
+    display:inline-block;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+}
+
+.sidebar img{
+    display: inline-block;
+    padding-right: 10px;
+   
+}
+
+.image-overlay{
+    position: absolute; 
+    top: 5%;
+    left: 29%;
+    width: 80px;
+    height: 80px;
+    transition: 0.8s;
+}
+.image-bg{
+    background-color: rgb(68, 168, 68);
+    transition: 0.8s;
+}
+.img-text{
+    position: absolute;
+    top: 17%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+  }
+  
+.close-button{
+    position: absolute;
+    width: 60px;
+}
+
+ 
