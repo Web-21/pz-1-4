@@ -9,226 +9,78 @@
     <title>PZ_1_4</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
   </head>
-  <header>
-    <!-- Бокове меню узято з https://www.w3schools.com/howto/howto_js_sidenav.asp -->
-    <div id="mySidenav" class="sidenav">
-
-      <div class="header-content">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a>
-        <div class="name">Ганна Демьяненко </div>
-        <img class="image-bottom" src="img\Pattern.png" alt="Background" />
-        <img class="image-top" src="img\Avatar.png" alt="Avatar" />
-        <div class="menu-item">
-          <img src="img/Vector.jpg" alt="Icon" class="icon">
-          <a href="#">Мій профіль</a>
-        </div>
-        <div class="menu-item">
-          <img src="img/zamovlenya.jpg" alt="Icon" class="icon">
-          <a href="#">Замовлення</a>
-        </div>
-        <div class="menu-item">
-          <img src="img/massage.jpg" alt="Icon" class="icon">
-          <a href="#">Повідомлення</a>
-        </div>
-        <div class="menu-item">
-          <img src="img/Shape.jpg" alt="Icon" class="icon">
-          <a href="#">Улюблене</a> 
-        </div>
-        <div class="menu-item">
-          <img src="img/frends.jpg" alt="Icon" class="icon">
-          <a href="#">Друзі</a>
-        </div>
-        <div class="menu-item">
-          <img src="img/emeils.jpg" alt="Icon" class="icon">
-          <a href="#">Сповіщення</a>
-        </div>
-        <div class="menu-item">
-          <img src="img/settings.jpg" alt="Icon" class="icon">
-          <a href="#">Налаштування</a>
-        </div>   
-          <footer class="footer"></footer>
-        </div>     
-      </div>
-    </div>
-
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-
-      /* Set the width of the side navigation to 0 */
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
-    <div class="header">
-      <img src="img\menu.png" alt="menu" / onclick="openNav()"/>
-      <h1>Популярні тури</h1>
-    </div>
-  </header>
-
   <body>
-    <div class="main-content">
-      <div class="tour-card" onclick="openModal()">
-        <div class="tour-image">
-          <img
-            src="img/Тур вихідного дня “Гостинність Чорнобаївки”.png"
-            alt="Тур вихідного дня 'Гостинність Чорнобaївки'"
-          />
-          <div class="tour-title">
-            Тур вихідного дня "Гостинність Чорнобаївки"
-            <div class="tour-actions">
-              <a href="#"
-                ><img src="img/favorite.png" alt="Fav" class="action-icon"
-              /></a>
-              <a href="#"
-                ><img src="img/Shape.png" alt="Share" class="action-icon"
-              /></a>
-            </div>
+    <div class="container">
+
+      <div class="app_bar">
+
+        <div class="menu" onclick="location.href='menu.html'"></div>
+        <div class="tour-title ">
+          <a> Популярні тури</a>
+        </div>
+      </div>
+      
+      <div class="news-container news-item-image1">
+        <div class="flex-container">
+          <div class="text">
+            <a href="/page.html">Тур вихідного дня “Гостинність Чорнобаївки”</a>
+          </div>
+          <div class="icon-buttons">
+            <div class="like"></div>
+            <div class="share"></div>
           </div>
         </div>
       </div>
-
-      <div class="tour-card">
-        <div class="tour-image">
-          <img
-            src="img/Дайвінг-тур Таємниці Зміїного.png"
-            alt="Дайвінг-тур 'Таємниці Зміїного'"
-          />
-          <div class="tour-title">
-            Дайвінг-тур "Таємниці Зміїного"
-            <div class="tour-actions">
-              <a href="#"
-                ><img src="img/favorite.png" alt="Fav" class="action-icon"
-              /></a>
-              <a href="#"
-                ><img src="img/Shape.png" alt="Share" class="action-icon"
-              /></a>
-            </div>
+      <div class="news-container news-item-image2">
+        <div class="flex-container">
+          <div class="text">
+            <a href="#">Дайвінг-тур "Таємниці Зміїного"</a>
+          </div>
+          <div class="icon-buttons">
+            <div class="like"></div>
+            <div class="share"></div>
           </div>
         </div>
       </div>
-
-      <div class="tour-card">
-        <div class="tour-image">
-          <img
-            src="img\Сафарі-тур “Гадяцький”.png"
-            alt="Сафарі-тур
-          'Гадяцький'"
-          />
-          <div class="tour-title">
-            Сафарі-тур “Гадяцький”
-            <div class="tour-actions">
-              <a href="#"
-                ><img src="img/favorite.png" alt="Fav" class="action-icon"
-              /></a>
-              <a href="#"
-                ><img src="img/Shape.png" alt="Share" class="action-icon"
-              /></a>
-            </div>
+      <div class="news-container news-item-image3">
+        <div class="flex-container">
+          <div class="text">
+            <a href="#">Сафарі-тур “Гадяцький”"</a>
+          </div>
+          <div class="icon-buttons">
+            <div class="like"></div>
+            <div class="share"></div>
           </div>
         </div>
       </div>
-
-      <div class="tour-card">
-        <div class="tour-image">
-          <img
-            src="img/Майстер-клас “Ромський”.png"
-            alt="Майстер-клас 'Ромський'"
-          />
-          <div class="tour-title">
-            Майстер-клас “Ромський”
-            <div class="tour-actions">
-              <a href="#"
-                ><img src="img/favorite.png" alt="Fav" class="action-icon"
-              /></a>
-              <a href="#"
-                ><img src="img/Shape.png" alt="Share" class="action-icon"
-              /></a>
-            </div>
+      <div class="news-container news-item-image4">
+        <div class="flex-container">
+          <div class="text">
+            <a href="#">Майстер-клас “Ромський”</a>
+          </div>
+          <div class="icon-buttons">
+            <div class="like"></div>
+            <div class="share"></div>
           </div>
         </div>
+      </div>
+      <div class="news-container news-item-image5">
+        <div class="flex-container">
+          <div class="text">
+            <a href="#">Квест-тур “Київ за три дні”</a>
+          </div>
+          <div class="icon-buttons">
+            <div class="like"></div>
+            <div class="share"></div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar">
+        <div class="manage-panel back"></div>
+        <div class="manage-panel home"></div>
+        <div class="manage-panel recent"></div>
       </div>
     </div>
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <div class="header">
-          <h1>Тур вихідного дня “Гостинність Чорнобаївки”</h1>
-          <span class="close" onclick="closeModal()">&times;</span>
-        </div>
-        <div class="tour-image">
-          <img
-            src="img/Тур вихідного дня “Гостинність Чорнобаївки”.png"
-            alt="Тур вихідного дня 'Гостинність Чорнобаївки'"
-          />
-          <div class="tour-title">
-            <div class="tour-actions">
-              <a href="#"
-                ><img src="img/favorite.png" alt="Fav" class="action-icon"
-              /></a>
-              <a href="#"
-                ><img src="img/Shape.png" alt="Share" class="action-icon"
-              /></a>
-            </div>
-          </div>
-        </div>
-
-        <h3>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum
-          dictum augue. Fusce ultricies sit amet velit sit amet dictum. Aenean
-          iaculis ex dui, sed consectetur lectus ultrices ut. Mauris congue
-          iaculis felis ac ornare. Suspendisse potenti. Phasellus euismod,
-          libero quis venenatis tempus, magna ipsum rutrum tellus, vel rhoncus
-          nulla lacus id nibh. In blandit, turpis ut consequat pharetra, mi
-          magna consectetur arcu, eget sagittis tortor sapien ac nunc. Proin id
-          nunc ultricies, fermentum arcu non, dignissim lorem. Morbi ultrices
-          augue lacus, ut sodales est dignissim eget. Phasellus sed congue odio.
-          In aliquam ligula nec eros elementum pellentesque.
-        </h3>
-        <h2>Відгуки</h2>
-        <div class="review">
-          <img src="img\Oval.png" alt="reviewer" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna wirl aliqua. Up
-            exlaborum incididunt quis nostrud exercitatn.
-          </p>
-        </div>
-        <div class="review">
-          <img src="img\Oval (1).png" alt="reviewer" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum
-            dictum augue. Fusce ultricies sit amet velit sit amet dictum. Aenean
-            iaculis ex dui, sed consectetur lectus ultrices ut. Mauris congue
-            iaculis felis ac ornare.
-          </p>
-        </div>
-        <h2>Наступна подія</h2>
-        <div class="event">
-          <img src="img/Imported Layers.jpg" alt="Icon" class="icon">
-          <p>15 травня 2022</p>
-        </div>        
-        <div class="event">
-          <img src="img/frends.jpg" alt="Icon" class="icon">
-          <p>Кількість місць необмежена</p>
-        </div>
-        <button class="reservButton">Забронювати</button>
-      </div>
-    </div>
-    <script>
-      function openModal() {
-        document.getElementById("myModal").style.display = "block";
-      }
-
-      function closeModal() {
-        document.getElementById("myModal").style.display = "none";
-      }
-      window.onclick = function (event) {
-        if (event.target == document.getElementById("myModal")) {
-          document.getElementById("myModal").style.display = "none";
-        }
-      };
-    </script>
   </body>
+    
 </html>
