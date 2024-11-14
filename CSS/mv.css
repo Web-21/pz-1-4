@@ -12,8 +12,9 @@ body {
   width: 340px;
   height: 640px;
   background: rgb(38, 37, 37);
-  margin-left: 550px;
+  margin: 0 auto;
   display: flex;
+
 }
 
 .side-menu {
@@ -118,14 +119,16 @@ body {
   background-image: url(../img/spam.png);
 }
 
+.header-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
 .header-shape {
-  position: absolute;
-  top: 5px;
-  right: 5px;
   width: 10px;
   height: 10px;
   cursor: pointer;
-  margin: 20px 600px;
 }
 
 .header-shape img {
