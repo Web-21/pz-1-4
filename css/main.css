@@ -29,6 +29,7 @@ img{
     background-color: #212121;
     margin: 0 auto;
     display: flex;
+  grid-template-columns: repeat(2, 57px)
 }
 .navbar{
     width: 360px;
@@ -80,4 +81,12 @@ h1{
 .more-info{
   color: #FFFFFF;
   text-decoration: none;
+}
+.general-title{
+  position: relative;
+  text-align: center;
+  align-self: center;
+  padding-left: 30px;
+  padding-top: -10px;
+  padding-left: 100px;
 }

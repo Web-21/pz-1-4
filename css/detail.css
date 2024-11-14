@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: repeat(6, 57px);
     place-items: center;
-  justify-items: end;
+    justify-items: end;
 }
 .img-favourite-details{
   width: 24px;
