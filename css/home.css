@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+   
+}
+
+.header-tours {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #222;
+    width: 100%;
+    max-width: 360px;
+}
+
+.header-tours h1 {
+    font-size: 1.5em;
+    padding-left: 20px;
+    color: white;
+}
+
+.main-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    position: relative;
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+    width: 344px;
+    background-color: #333;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #39784e49; 
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    height: 68px;
+}
+
+.overlay a {
+    text-decoration: none;  
+    color: white;
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+    width: 250px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons img{
+    width: 24px; 
+    height: 24px;
+}
+.like-icon, .share-icon {
+    margin-left: 15px;
+    cursor: pointer;
+    width: 24px; 
+    height: 24px;
+}
+
+
+
+.icon-share {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
