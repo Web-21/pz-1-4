@@ -71,6 +71,7 @@ body{
 .image-bg{
     background-color: rgb(68, 168, 68);
     transition: 0.8s;
+    width: 276px;
 }
 .img-text{
     position: absolute;
@@ -93,4 +94,15 @@ body{
     width: 60px;
 }
 
- 
+.sidebar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px; 
+    background: white;
+    background-image: linear-gradient(to left, #303030 54px, rgba(0,0,0,0) 54px); 
+    border-radius: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
