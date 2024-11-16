@@ -101,14 +101,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Вертикальне розташування */
-    min-height: 100vh; /* Висота сторінки */
+    flex-direction: column; 
+    min-height: 100vh; 
     margin: 0;
-    background-color: #333; /* Фон */
+    background-color: #333; 
     color: #fff;
 }
 
-/* Контейнер для карток */
 .main-content {
     display: flex;
     flex-direction: column; /* Вертикальна колонка */
@@ -117,12 +116,11 @@ body {
     padding: 20px;
 }
 
-/* Картки */
 .card {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
-    width: 100%; /* Картки займають всю ширину контейнера */
+    width: 100%;
     background-color: #444;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -134,7 +132,7 @@ body {
     display: block;
 }
 
-/* Накладення тексту */
+
 .overlay {
     position: absolute;
     bottom: 0;
@@ -149,7 +147,7 @@ body {
     font-size: 1em;
 }
 
-/* Посилання */
+
 .overlay a {
     text-decoration: none;
     color: white;
@@ -157,7 +155,6 @@ body {
     width: 80%;
 }
 
-/* Іконки */
 .icons {
     display: flex;
     gap: 10px;
@@ -169,7 +166,6 @@ body {
     cursor: pointer;
 }
 
-/* Сердечко змінює колір */
 .like-icon:hover {
     filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(5000%) hue-rotate(340deg) brightness(95%) contrast(90%);
     transform: scale(1.1);
