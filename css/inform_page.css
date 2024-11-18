@@ -1,0 +1,163 @@
+body {
+    margin: 20px;
+    padding: 0;
+    width: 375px; 
+    height: 100%; 
+    background-color: #f0f0f0;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+  
+  header {
+    display: flex;                
+    align-items: center;          
+    justify-content: space-between; 
+    width: 100%;                  
+    background-color: #212121;
+    color: white;
+  }
+  
+  header img{
+    margin: 20px;
+  }
+  
+  
+  main {
+    background-color: #303030;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  .photo-container {
+    position: relative;            
+    margin-bottom: 10px;           
+    max-width: 500px;              
+  
+  }
+  
+  .photo {
+    width: 100%;                  
+    height: auto;                 
+  }
+  
+  .photoOverlay {
+    position: absolute;
+    bottom: 3px;                     
+    left: 0;
+    width: 100%;                   
+    background-color: #202020B2 ;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    align-items:first baseline;             
+    box-sizing: border-box;         
+  
+  }
+  .photoIcons {
+    display: flex;
+    gap: 20px;
+    margin: 20px;                    
+  }
+  p{
+    margin: 0 20px;
+    color: white;
+    text-align: left;
+    font-family: sans-serif;
+  }
+  .reviews{
+    margin: 40px 20px 10px 20px;
+    color: white;
+    text-align: left;
+    font-family: sans-serif;
+  }
+  
+  .message{
+  padding-bottom: 20px;
+  }
+  
+  .circle-image{
+    float: left;
+    margin-left: 20px;
+  }
+  
+  .circle-image-woman{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .textOverlay{
+    background-color: #757575;
+    color: white;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 0px 20px 20px 20px; 
+    text-align: left;
+    margin: 30px 20px 10px 70px;
+  }
+  
+  .nextStep{
+    margin: 10px 20px 25px 20px;
+    color: white;
+    text-align: left;
+    font-family: sans-serif;
+  
+  }
+  
+  .iconText {
+    display: flex;
+    align-items: center;
+    margin:10px;
+  }
+  
+  .icon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 20px; 
+    margin-left: 10px;
+  }
+  
+  .text {
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #6FB285;
+  }
+  
+  .button-booking{
+    background-color: #39784E;
+    border: 0;
+    height: 50px;
+    width: 90%;
+    border-radius: 5px; 
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .icon-back-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icon-home-icon {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .icon-recent-icon {
+    width: 12px;
+    height: 12px;
+  }
+  
+  footer {
+    background-color: #000000;       /* Чорний фон для футера */
+    display: flex;                   /* Використання flexbox для вирівнювання */
+    justify-content: center;         /* Центрує всі іконки */
+    align-items: center;             /* Вирівнює іконки по вертикалі */
+    padding: 10px 0;                 /* Відступи зверху і знизу */
+  }
+  
+  footer img {
+    width: 24px;                    /* Ширина іконок */
+    height: 24px;                   /* Висота іконок */
+    margin: 0 30px;                 /* Відступи між іконками */
+  }
