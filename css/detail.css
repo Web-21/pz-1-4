@@ -1,0 +1,97 @@
+.main-info-details{
+  width:360px;
+  background-color: #303030;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.img-detail{
+  z-index: -1;
+  width: 360px;
+}
+.content-detail{
+    background: rgba( 0, 0, 0, 0.6);
+    width: 360px;
+    height: 48px;
+    position: absolute;
+    top: 212px;
+    display: grid;
+    grid-template-columns: repeat(6, 57px);
+    place-items: center;
+    justify-items: end;
+}
+.img-favourite-details{
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  grid-column: 5;
+}
+.img-share-details{
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  grid-column: 6;
+}
+
+.p-details{
+  color: #FFFFFFB2;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+h1{
+  font-size: 18px
+}
+
+.icon-details{
+  width: 24px;
+  height: 24px;
+  padding-left: 10px;
+  align-self: center;
+}
+.container-button-reserve{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.button-reserve{
+  width: 320px;
+  height: 42px;
+  background-color: #39784E;
+  color: white;
+}
+
+.img-user{
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+}
+.comments-card{
+  background-color: #757575;
+  margin-left: 10px;
+  margin-right: 15px;
+  border-radius: 0px 15px 15px 15px;
+
+}
+.card-container{
+  display: flex;
+  padding-top: 10px;
+}
+.text-comment{
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+}
+.container-reviews{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.title-news{
+  display: inline-block;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+  position: relative;
+  top: 13px
+}
