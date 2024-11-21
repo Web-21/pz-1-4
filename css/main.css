@@ -6,8 +6,7 @@ body {
     padding: 0;
     background-color: #303030;
 }
-
-#headerTitle {
+#HeaderText{
     font-size: 25px;
     margin-left: 20px;
 }
@@ -22,7 +21,7 @@ header {
     padding-left: 10px;
 }
 
-.toggle-menu-btn {
+.menu-btn {
     font-size: 24px;
     cursor: pointer;
     color: #fff;
@@ -31,7 +30,7 @@ header {
     text-decoration: none;
 }
 
-.side-panel {
+.side-menu {
     height: 100%;
     width: 430px; 
     position: fixed;
@@ -44,65 +43,65 @@ header {
     z-index: 10;
 }
 
-.panel-content {
+.menu-container {
     width: 380px;
     display: flex;
     flex-direction: column;
 }
 
-.user-profile {
+.profile {
     padding: 20px;
     text-align: center;
-    background-image: url(../img/3.jpg);
-    height: 190px;
 }
 
-.user-profile img {
+.profile img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     margin-top: 35px;
 }
 
-.user-profile p {
+.profile p {
     margin-top: 10px;
     font-size: 18px;
     color: white;
 }
 
-.menu-items {
+.menu-content {
     flex-grow: 1;
     padding-top: 20px;
 }
 
-.item {
+.menu-item {
     margin-top: 40px;
     display: flex;
     align-items: center;
+    margin-top: 30px;
     margin-left: 30px;
 }
 
-.item img {
+.menu-item img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
 
-.item a {
+.menu-item a {
     text-decoration: none;
     font-size: 18px;
     color: black;
     transition: 0.3s;
 }
 
-.item a:hover {
+.menu-item a:hover {
     color: #ffcc00;
 }
 
-.close-btn-container {
+.close-container {
     width: 50px;
     background-color: #303030;
     padding-top: 20px;
+    
 }
 
 .close-btn {
@@ -113,38 +112,49 @@ header {
     margin-left: 15px;
 }
 
-#menuPanel:target {
+#sideMenu:target {
     left: 0;
 }
+.profile{
+    background-image: url(../img/3.jpg);
+    height: 190px;
+}
+#holidayTour{
+    background-image: url(../img/holidayTour.png);
+    background-size: cover;
+}
+#holidayTourOnPage{
+    background-image: url(../img/holidayTour.png);
+    background-size: cover;
+    height: 300px;
+}
 
-.tour-section {
+#MysteruZmiiniy{
+    background-image: url(../img/MysteryZmiiniyTour.png);
+    background-size: cover;
+}
+#SafariTour{
+    background-image: url(../img/SafariTour.png);
+    background-size: cover;
+}
+#MasterClass{
+    background-image: url(../img/MasterClass.png);
+    background-size: cover;
+}
+#QuestTour{
+    background-image: url(../img/QuestTour.png);
+    background-size: cover;
+}
+.tours-container {
     height: 320px;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
     position: relative; 
     background-size: cover;
 }
 
-#tourWeekend {
-    background-image: url(../img/holidayTour.png);
-}
-
-#tourSnakeIsland {
-    background-image: url(../img/MysteryZmiiniyTour.png);
-}
-
-#tourSafari {
-    background-image: url(../img/SafariTour.png);
-}
-
-#tourMasterClass {
-    background-image: url(../img/MasterClass.png);
-}
-
-#tourQuest {
-    background-image: url(../img/QuestTour.png);
-}
-
-.tour-info {
+.tour-description {
     background-color: rgba(57, 120, 78, 0.42);
     width: 100%;
     display: flex;
@@ -155,18 +165,110 @@ header {
     box-sizing: border-box; 
 }
 
-.tour-info p {
+.tour-description p {
     margin: 0; 
     color: white; 
 }
 
-.tour-info img {
+.tour-description img {
     margin-left: 10px; 
     width: 24px; 
     height: 24px;
 }
-
-a {
+a{
     text-decoration: none;
     color: white;
+}
+#TourHeader{
+    background-color: #212121;
+    display: flex;
+    justify-content: space-between;
+}
+#TourName{
+    font-size: 25px;
+}
+#interDivTour{
+    background-color: #2020209e;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: absolute; 
+    bottom: 0; 
+    padding: 10px;
+    box-sizing: border-box; 
+}
+#holidayTourOnPage{
+    position: relative; 
+    background-size: cover;
+}
+#TourDescText{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #FFFFFFB2;
+}
+#firstComment{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#secondComment{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#firstCommentText{
+    text-align: left;
+    padding-left: 20px;
+    margin-left: 70px;
+    background-color: #757575;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 320px;
+}
+#secondCommentText{
+    text-align: left;
+    padding-left: 20px;
+    margin-left: 70px;
+    background-color: #757575;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 320px;
+    height: 40px;
+}
+#FeedBacks{
+    margin-left: 20px;
+    color: white;
+}
+.one{
+    color: #FFFFFFB2;
+}
+p{
+    color: white;
+}
+.ImgUnderComment{
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.usefukInform{
+    color: #6FB285;
+    font-size: 20px;
+}
+#lastButton{
+    background-color: #6FB285;
+    color: white;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 50px;
+    font-size: 20px;
+    
+}
+#ThisDIV{
+    display: flex;
+    justify-content: center;
 }
