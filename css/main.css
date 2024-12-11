@@ -300,3 +300,14 @@ p {
     margin-top: 20px;
     cursor: pointer;
 }
+
+
+.heart {
+    transition: filter 0.3s ease;
+  }
+  
+ 
+  .heart:hover {
+    filter: invert(29%) sepia(96%) saturate(7453%) hue-rotate(358deg) brightness(91%) contrast(106%);
+  }
+  
